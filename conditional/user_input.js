@@ -1,5 +1,5 @@
 /*
- Discrption : 
+ Description : 
    *num : number
     condition : if multiple of 5 or not
          if-else statement is use

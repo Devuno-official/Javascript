@@ -1,5 +1,5 @@
 /*
- Discrption : 
+ Description : 
    *n : type is object
     condition : using switch,case & default to solve the sequences
 */ 
