@@ -2,16 +2,15 @@
      margin: 0;
      padding: 0;
 }
-
-
-
-boby{
-     background-color: rgb(13, 13, 13);
-     text-align: center;
-}
-
-
-h4 {
+#main {
      color: deepskyblue;
      background-color: black;
+}
+#div{
+     background-color: aqua;
+     height: 100px;
+     width: 100px;
+     color: yellow;
+     border: 3in;
+     border-color: aquamarine;
 }
