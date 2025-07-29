@@ -14,7 +14,8 @@ let str3 = `Hello, ${str2}!`; // Template literal
 
 ## Common String Methods
 
-- `.length` — Returns the length of the string.
+- `.length` — Returns the length of the string.ps aux | grep gnome
+
 - `.toUpperCase()` / `.toLowerCase()` — Changes case.
 - `.indexOf(substring)` — Finds the position of a substring.
 - `.slice(start, end)` — Extracts a section of the string.
