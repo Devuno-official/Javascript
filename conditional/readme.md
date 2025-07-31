@@ -1,7 +1,7 @@
 # 🏆 JavaScript Conditionals VIP Guide
 
 ## What are Conditionals?
-Conditionals let you run code only if certain conditions are true. They help your program make decisions.
+Conditionals let you run code only if certain conditions are true. They help your program make decisions
 
 ---
 
