@@ -52,7 +52,5 @@ let reduce = function (nums, fn, init) {
   for (let i = 0; i < array.length; i++) {
     val = fn(val, nums[i]);
   }
-   return val;
+  return val;
 };
-
-    let nums = [1,2,3,4];
