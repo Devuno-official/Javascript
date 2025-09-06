@@ -46,7 +46,7 @@
 var compose = function (functions) {
 
      return function(x){
-
+       console.log('')
      }
 };
 
