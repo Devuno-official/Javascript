@@ -54,26 +54,3 @@ document.getElementById('clear').addEventListener("click",(dot)=>{
 
 
 
-
-
-
-
-
-
-
-
-// button.forEach((elm) => {
-//      elm.addEventListener("click", function (ev) {
-//           ev.stopPropagation();
-//           let elm_Num = +elm.innerText;
-//      });
-// });
-
-// document.querySelectorAll(".symbol").forEach((Symbol) => {
-//      Symbol.addEventListener("click", function (ev) {
-//           ev.stopPropagation();
-//           let SymbolStr = Symbol.innerHTML;
-//           console.log(SymbolStr);
-//           inputField.value = `${SymbolStr}`;
-//      });
-// });
