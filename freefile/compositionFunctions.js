@@ -43,22 +43,18 @@
    * Wrapper function return karo jo final composed value dega.
  */
 
-var compose = function (functions) {
-
-     return function(x){
-       console.log('')
+var compose = function(fns) {
+    return function(x) {    
+     for(ele of fns){
+        x = ele(x);
      }
+       console.log(x);     
+    }
 };
 
-let f = function (x) {
-  return x + 1;
-};
-let g = function (x) {
-  return x * 2;
-};77
-let h = function (x) {
-  return x - 1;
-};
+const fn = compose([
+   (x) => x + 1,
+    (x) => 2 * x
+  ]);
 
-let result = compose([x => x + 1, x => 2 * x],23);
-console.log(result);
+  fn(4); // 9
