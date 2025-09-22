@@ -1,50 +1,13 @@
-/*
-
-1. **Goal samajho:**
-
-   * Tumhe ek **function** return karna hai jo multiple functions ko ek ke baad ek lagaye.
-   * Agar tumhare paas `[f, g, h]` hai, aur input `x`,
-     to order hoga → `f(g(h(x)))`.
-   * Matlab **right se left** apply karna hai.
-
----
-
-2. **Empty Array Case (Identity Function):**
-
-   * Agar functions array khali hai, return a function jo `x` ko wahi return kare.
-   * Example: `fn(x) = x`.
-
----
-
-3. **Flow Build Karna:**
-
-   * Tum ek **wrapper function** banate ho jo ek value lega.
-   * Phir tum array ke har function ko apply karoge.
-   * Order ke liye: ya to array ko reverse karke left-to-right chalana, ya seedha right-to-left iterate karna.
-
----
-
-4. **Dry Run Example:**
-
-   * Suppose `arr = [f, g, h]`, aur input `2`.
-   * Start: `val = 2`.
-   * Step 1 → `val = h(2)`.
-   * Step 2 → `val = g(val)`.
-   * Step 3 → `val = f(val)`.
-   * Return `val`.
-
----
-
-5. **Summary of Thinking:**
-
-   * Identity handle karo.
-   * Ek loop ya reduce use karke functions ko **chain** karo.
-   * Order: right to left.
-   * Wrapper function return karo jo final composed value dega.
- */
+// *Given an array of functions [f1, f2, f3, ..., fn], return a new function fn that is the function composition of the array of functions.
+// The function composition of [f(x), g(x), h(x)] is fn(x) = f(g(h(x))).
+// The function composition of an empty list of functions is the identity 
+// function f(x) = x.
+// You may assume each function in the array accepts one integer as input 
+// and returns one integer as output.
 
 var compose = function(fns) {
-    return function(x) {    
+    return function(x) { 
+       fns.reverse();  //  for(let i = fns.length -1 ; i >= 0 ; 1--)   
      for(ele of fns){
         x = ele(x);
      }
