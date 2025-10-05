@@ -1,8 +1,10 @@
-* {
+*,*::after,*::before{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
 }
+
+
 html,
 body {
      width: 100%;
@@ -48,7 +50,7 @@ input {
      box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.11);
 }
 
-#medium{
+#medium {
      height: 10%;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
@@ -57,7 +59,7 @@ input {
      background-color: white;
 }
 
-#bottom{
+#bottom {
      height: calc(100% - 10% - 10%);
      background-color: white;
      display: grid;
@@ -77,7 +79,9 @@ button {
      box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.11);
 }
 
-#clear,#backSpace,#dot{
-   height: 40px;
+#clear,
+#backSpace,
+#dot {
+     height: 40px;
 
 }
