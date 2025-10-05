@@ -2,8 +2,11 @@
 // *rguments passed to it.
 
 
-var  argumentsLength = function(...argu){
+
+const argumentsLength = function(...argu) {
+ return argu.length;
 
 }
 
- argumentsLength(1,2,3,4,5);
+console.log(argumentsLength({}, null, "3"));
+
