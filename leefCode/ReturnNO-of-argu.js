@@ -1,12 +1,13 @@
 // *Write a function argumentsLength that returns the count of a
-// *rguments passed to it.
+// *arguments passed to it.
 
 
 
-const argumentsLength = function(...argu) {
- return argu.length;
+const argumentsLength = function(...arr) {
+        return arr.length;
 
 }
+ let Val = argumentsLength([], null, undefined, 0);
 
-console.log(argumentsLength({}, null, "3"));
+console.log("Number of actual parameter :",Val);
 
